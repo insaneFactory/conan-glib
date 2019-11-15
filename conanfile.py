@@ -32,6 +32,7 @@ class GLibConan(ConanFile):
     autotools = None
     short_paths = True
     generators = "pkg_config"
+    build_requires = "ninja/1.9.0"
     requires = "zlib/1.2.11", "libffi/3.2.1"
     exports_sources = ["patches/*.patch"]
 
